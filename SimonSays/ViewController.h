@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SimonSays.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <SimonSaysDelegate>
 
+@property (nonatomic, strong) SimonSays *simonSays;
+@property (strong, nonatomic) IBOutlet UILabel *wrongLabel;
+@property (strong, nonatomic) IBOutlet UILabel *correctLabel;
 
 @end
 
